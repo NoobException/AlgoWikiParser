@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap&subset=latin-ext"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="Skeleton-2.0.4/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="Skeleton-2.0.4/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/atom-one-light.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+
+    <title>Page Test</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <h2 class="title"> Przeszukiwanie wszerz </h2>
+        </section>
+        <section>
+            <h6 class="section-title"> O algorytmie </h6>
+            Przeszukiwanie wszerz (albo też BFS, z angielskiego Breadth-first search) jest algorytmem, który pozwala w
+            czasie liniowym przejrzeć graf.
+            Ma on tę przyjemną własność, że w grafie nieważonym odwiedza wierzchołki w kolejności rosnącej od grafu.
+        </section>
+        <section>
+            <h6 class="section-title"> Pseudokod </h6>
+            Algorytm BFS jest implementowany przy użyciu kolejki, do której wrzucamy kolejne wierzchołki.
+            <pre class="code-example">
+                <code class="code-example-body cpp">
+array visited;
+array distance;
+queue nodes_to_visit;
+nodes_to_visit.push(source);
+distance[source] = 0;
+visited[source] = true;
+while (not nodes_to_visit.empty())
+{
+    current_node = nodes_to_visit.front();
+    nodes_to_visit.pop();
+    for (neighbor in get_neighbors(current_node))
+    {
+        if (visited[neighbor])
+            continue;
+        visited[neighbor] = true;
+        distance[neighbor] = distance[current_node] + 1;
+        nodes_to_visit.push(neighbor);
+    }
+}
+                </code>
+            </pre>
+        </section>
+    </div>
+</body>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+</html>

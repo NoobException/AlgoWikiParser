@@ -1,0 +1,32 @@
+category: Grafy
+category_id: graphs
+title: Przeszukiwanie wszerz
+---
+#Pokrótce
+
+Tak więc bfs jest takim algorytmem co je na grafie.
+bfs z jydnego knota wynojduje najmniyjsze dystance do innych knotów.
+
+href(Lynk)[https://turkuciepodjadki/testy/G03]
+
+img(https://picsum.photos/200/300)
+---
+
+#Pseudokod
+Wiela z was by pewnia chiała kod łobaczyć:
+```cpp
+
+array V - lista knotów
+queue Q - kolyjka
+
+```
+
+Btw: `for (int i = 0; i < 10; i++)` to jest pentla.
+
+---
+
+| Ważen dyng
+| To jest ten sam dyng
+
+| A to je inen
+

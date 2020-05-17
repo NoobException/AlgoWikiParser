@@ -1,0 +1,179 @@
+@media screen and (max-width: 800px) {
+	.nav-list {
+		max-height: 0;
+	}
+	.nav-list li {
+		border-bottom: 1px solid #eee;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.dropdown-list {
+		position: absolute;
+	}
+
+	.nav-list > li {
+		float: left;
+	}
+
+	#top-nav-hover {
+		display: none;
+	}
+}
+
+.top-nav {
+	position: sticky;
+	top: 0px;
+	margin: 0;
+	width: 100%;
+	z-index: 999;
+	background-color: white;
+}
+
+.nav-list {
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+	transition: all 1s ease-out;
+	border-bottom: 1px solid #eee;
+}
+
+.top-nav-item,
+.top-nav li {
+	margin: 0;
+}
+
+.nav-list a,
+.top-nav-link {
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	padding: 15px;
+	background-color: white;
+}
+
+.nav-list a:hover {
+	background-color: #eee;
+}
+
+li:hover .nav-list {
+	max-height: 1000px;
+}
+
+.dropdown-list li {
+	border-bottom: 1px solid #eee;
+}
+.main {
+	background-color: #1eaedb !important;
+	color: white !important;
+}
+
+.main:hover {
+	background-color: #1681a2 !important;
+}
+
+.dropdown-list {
+	list-style: none;
+	overflow: hidden;
+	max-height: 0;
+	padding: 0;
+	margin: 0;
+	transition: all 0.5s ease-out;
+	display: flex;
+	flex-direction: column;
+}
+
+li:hover > .dropdown-list {
+	max-height: 200px;
+}
+
+.header {
+	text-align: center;
+}
+
+.title {
+	font-weight: 300;
+}
+
+.section-title {
+	font-weight: 600;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+}
+
+section {
+	border-top: 1px solid #eee;
+	padding: 6rem 0;
+}
+section:first-child {
+	border: none;
+}
+
+.code-example {
+	display: block;
+}
+
+.code-example-body {
+	padding: 2rem !important;
+	background-color: #fff !important;
+}
+
+.list-header {
+	font-weight: 600;
+}
+.table-of-contents {
+	list-style: none;
+}
+ol li::marker,
+ol li {
+	font-weight: 600;
+	font-size: 1.7rem;
+}
+ol {
+	margin-top: 3rem;
+}
+footer {
+	border-top: 1px solid #eee;
+	height: 100px;
+	padding: 10px;
+	text-align: center;
+	justify-content: center;
+}
+
+footer img {
+	height: 50px;
+}
+
+blockquote {
+	border-left: 3px solid #1edb4a;
+	background-color: #1edb4a22;
+	font-family: 'Sriracha', cursive;
+	padding: 5px;
+}
+
+cite {
+	display: block;
+	line-height: 1.8em;
+	margin-top: 1em;
+}
+
+.note {
+	width: 100%;
+	padding: 10px;
+	border-left: 3px solid #1eaedb;
+	background-color: #1eaedb22;
+	font-weight: bold;
+	margin-top: 3rem;
+}
+
+.img-wrapper {
+	text-align: center;
+	width: 100%;
+}
+
+img {
+	box-shadow: 0 0 10px 0 #eee;
+	border-radius: 5px;
+}
